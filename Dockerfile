@@ -2,7 +2,6 @@ FROM multiarch/debian-debootstrap:amd64-jessie-slim
 
 ARG snapcast_version=0.15.0
 ENV HOST snapserver
-
 RUN  apt-get update \
   && apt-get install -y wget ca-certificates \
   && rm -rf /var/lib/apt/lists/*
